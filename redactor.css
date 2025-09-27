@@ -1,0 +1,172 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+body {
+    height: 100vh;
+    background-color:  #2A2625;
+    color: #D9D9D9;
+    font-size: 16px;
+    font-family: 'Inter';
+}
+
+
+h2 {
+    font-size: 24px;
+    font-family: 'Press Start 2P';
+}
+
+.container {
+    margin: 3vh 5vw;
+    display: flex;
+    gap: 3vh;
+}
+
+#palette,
+#controls {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.color {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #2A2625;
+}
+
+#controls button {
+    width: 150px;
+    height: 40px;
+    background-color:#333;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+#controls button:hover {
+    background-color: #D57392;
+}
+
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(32, 20px);
+    gap: 1px;
+}
+
+.pixel {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border: 1px solid #2A2625;
+    cursor: pointer;
+}
+
